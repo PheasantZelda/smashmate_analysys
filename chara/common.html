@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!--Headerはここから-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>SSBU SMASHMATE-ANALYSYS</title>
+    <!--meta http-equiv="X-UA-Compatible" content="IE=edge"-->
+    <meta name="discription" content="ページの概要文を記載します">
+    <!--スマホ用の画面設定-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/toggle-menu.js"></script>
+    <script src="../js/csv.js"></script>
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/chara.css" rel="stylesheet">
+</head>
+
+<!--Bodyはここから-->
+
+<body>
+    <!--headerはここから-->
+    <header class="header">
+        <!--スマホ表示時にスタイリングしやすくするためもう一つ箱<div>を定義-->
+        <div class="header-inner">
+            <!--./index.htmlでトップページを指す-->
+            <a class="header-logo" href="../index.html">
+                <img src="../img/common/hedder-logo.png" alt="SSBU">
+            </a>
+            <button class="toggle-menu-button">_</button>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <li><a href="../fighter.html">ファイター一覧</a></li>
+                        <li><a href="../ranking.html">キャラランク</a></li>
+                        <li><a href="../complemantaly.html">サブ補完適正</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--headerはここまで-->
+
+    <!--mainはここから-->
+    <main class="main">
+        <div class="title">
+            <h1>マリオの統計</h1>
+            <p>MARIO STATISTICS</p>
+        </div>
+        <div class="section">マリオの統計</div>
+        <div class="explain">
+            <p>　オンライン対戦サイト「<a href="https://smashmate.net/">スマメイト</a>」の15期から17期（サブ期含む）までの全ファイタ86体の戦績の統計を取りました。
+                レート1600以上の対戦をサンプリング対象としており、Best of 3 の勝敗を1カウントとして勝敗数を算出しています。
+                ダッシュファイターについては、それぞれ別ファイターとして扱っています。 (例:ピーチ/デイジー)
+                性能面でほぼ類似しているファイターもいますが、別ファイターとして扱っていますので、ご了承ください。
+            </p>
+        </div>
+
+        <div class="section">Match UP表</div>
+        <div class="explain1">
+            <p>　ファイター毎の勝率を見やすいように一覧表を作成しました。左右差ありで左上 → 右下にかけて有利 → 不利となっています。</p>
+        </div>
+        <div class="MU_table">
+            <ul class="MU_box">
+                <li class="MU_title MU_title_Fighter">
+                    <p>マリオMU表<br>R1600以上</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./mario.html"><img src="../img/MU_fighter/マリオ.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_yuuri">
+                    <p>有利<br>60~100%</p>
+                </li>
+                <li class="MU_result">
+                <!--ここからデータ挿入-->
+              
+                <!--ここまでデータ挿入-->
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_biyuuri">
+                    <p>微有利<br>52.5~60%</p>
+                </li>
+                <li class="MU_result">
+                <!--ここからデータ挿入-->
+              
+                <!--ここまでデータ挿入-->
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_gobu">
+                    <p>五分<br>47.5~52.5%</p>
+                </li>
+                <li class="MU_result">
+                <!--ここからデータ挿入-->
+              
+                <!--ここまでデータ挿入-->
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_bihuri">
+                    <p>微不利<br>40~47.5%</p>
+                </li>
+                <li class="MU_result">
+                <!--ここからデータ挿入-->
+              
+                <!--ここまでデータ挿入-->
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_huri">
+                    <p>不利<br>0~40%</p>
+                </li>
+                <li class="MU_result">
+                <!--ここからデータ挿入-->
+              
+                <!--ここまでデータ挿入-->
+                </li>
+            </ul>
+        </div>
+        <!--表はここから-->
+        <div class="section">
+            戦績詳細
+        </div>
+        <div class="explain2">
+            <p>
+                　さらに各ファイター毎の対戦数、勝敗、勝率を見たい方は以下のテーブルを参照ください。
+                各カラムの▲/▼ボタンを押すことで、昇順・降順に並べ替えることが可能です。
+            </p>
+        </div>
+        <!--
+        <table class="sorttbl" id="myTable">
+            <tr>
+                <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(1)')">ファイター<i class="fa fa-sort"></i></th>
+                <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(2)')">対戦数<i class="fa fa-sort"></i></th>
+                <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(3)')">勝利数<i class="fa fa-sort"></i></th>
+                <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(4)')">勝率<i class="fa fa-sort"></i></th>
+            </tr>
+-->
+        <table class="sorttbl" id="sampleTable">
+            <tr>
+                <th cmanSortBtn>ファイター</th>
+                <th cmanSortBtn>対戦数</th>
+                <th cmanSortBtn>勝利数</th>
+                <th cmanSortBtn>勝率</th>
+            </tr>
+            <!--ここからデータ挿入-->
+           
+            <!--ここまでデータ挿入-->
+        </table>
+    </main>
+    <!--mainはここまで-->
+
+    <!--footerはここから-->
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <li><a href="../fighter.html">ファイター一覧</a></li>
+                <li><a href="../ranking.html">キャラランク</a></li>
+                <li><a href="../complemantaly.html">サブ補完適正</a></li>
+            </ul>
+        </nav>
+        <a class="footer-logo" href="../index.html">
+            <img src="../img/common/footer-logo.png" alt="SSBU">
+        </a>
+        <p class="footer-tel">「スマブラは人類史上最高のゲームである」</p>
+        <p class="footer-time"><small>大乱闘スマッシュブラザーズは、任天堂株式会社様の登録商標です。
+                当サイトは個人のスマブラファンが運営する非公式のWebサービスです。<br>
+                任天堂株式会社様、他関連企業様とは一切関係ありません。
+                下記はサイト独自の内容に関する著作権を示すものです。</small></p>
+        <p class="copyright"><small>&copy;SMASHMATE-ANALYSYS All rights reserved.</small></p>
+    </footer>
+    <!--footerはここまで-->
+</body>
+
+</html>

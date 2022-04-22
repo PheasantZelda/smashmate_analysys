@@ -1,0 +1,1072 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<!--Headerはここから-->
+
+<head>
+    <meta charset="UTF-8">
+    <title>SSBU SMASHMATE-ANALYSYS</title>
+    <!--meta http-equiv="X-UA-Compatible" content="IE=edge"-->
+    <meta name="discription" content="ページの概要文を記載します">
+    <!--スマホ用の画面設定-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../js/toggle-menu.js"></script>
+    <script src="../js/csv.js"></script>
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/chara.css" rel="stylesheet">
+</head>
+
+<!--Bodyはここから-->
+
+<body>
+    <!--headerはここから-->
+    <header class="header">
+        <!--スマホ表示時にスタイリングしやすくするためもう一つ箱<div>を定義-->
+        <div class="header-inner">
+            <!--./index.htmlでトップページを指す-->
+            <a class="header-logo" href="../index.html">
+                <img src="../img/common/hedder-logo.png" alt="SSBU">
+            </a>
+            <button class="toggle-menu-button">_</button>
+            <div class="header-site-menu">
+                <nav class="site-menu">
+                    <ul>
+                        <li><a href="../fighter.html">ファイター一覧</a></li>
+                        <li><a href="../ranking.html">キャラランク</a></li>
+                        <li><a href="../complemantaly.html">サブ補完適正</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!--headerはここまで-->
+
+    <!--mainはここから-->
+    <main class="main">
+        <div class="title">
+            <h1>マリオの統計</h1>
+            <p>MARIO STATISTICS</p>
+        </div>
+        <div class="section">マリオの統計</div>
+        <div class="explain">
+            <p>　オンライン対戦サイト「<a href="https://smashmate.net/">スマメイト</a>」の15期から17期（サブ期含む）までの全ファイタ86体の戦績の統計を取りました。
+                レート1600以上の対戦をサンプリング対象としており、Best of 3 の勝敗を1カウントとして勝敗数を算出しています。
+                ダッシュファイターについては、それぞれ別ファイターとして扱っています。 (例:ピーチ/デイジー)
+                性能面でほぼ類似しているファイターもいますが、別ファイターとして扱っていますので、ご了承ください。
+            </p>
+        </div>
+
+        <div class="section">Match UP表</div>
+        <div class="explain1">
+            <p>　ファイター毎の勝率を見やすいように一覧表を作成しました。左右差ありで左上 → 右下にかけて有利 → 不利となっています。</p>
+        </div>
+        <div class="MU_table">
+            <ul class="MU_box">
+                <li class="MU_title MU_title_Fighter">
+                    <p>マリオMU表<br>R1600以上</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./mario.html"><img src="../img/MU_fighter/マリオ.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_yuuri">
+                    <p>有利<br>60~100%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./mii_swordfighter.html"><img src="../img/MU_fighter/剣術Mii.png" alt="ファイター画像"></a>
+                    <a href="./simon.html"><img src="../img/MU_fighter/シモン.png" alt="ファイター画像"></a>
+                    <a href="./king_dedede.html"><img src="../img/MU_fighter/デデデ.png" alt="ファイター画像"></a>
+
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_biyuuri">
+                    <p>微有利<br>52.5~60%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="../richter.html"><img src="../img/MU_fighter/リヒター.png" alt="ファイター画像"></a>
+                    <a href="../king_k_rool.html"><img src="../img/MU_fighter/キングクルール.png" alt="ファイター画像"></a>
+                    <a href="../piranha_plant.html"><img src="../img/MU_fighter/パックンフラワー.png" alt="ファイター画像"></a>
+                    <a href="../joker.html"><img src="../img/MU_fighter/ジョーカー.png" alt="ファイター画像"></a>
+                    <a href="../sonic.html"><img src="../img/MU_fighter/ソニック.png" alt="ファイター画像"></a>
+                    <a href="../samus.html"><img src="../img/MU_fighter/サムス.png" alt="ファイター画像"></a>
+                    <a href="../rob.html"><img src="../img/MU_fighter/ロボット.png" alt="ファイター画像"></a>
+                    <a href="../robin.html"><img src="../img/MU_fighter/ルフレ.png" alt="ファイター画像"></a>
+                    <a href="../pichu.html"><img src="../img/MU_fighter/ピチュー.png" alt="ファイター画像"></a>
+                    <a href="../ike.html"><img src="../img/MU_fighter/アイク.png" alt="ファイター画像"></a>
+                    <a href="../jigglypuff.html"><img src="../img/MU_fighter/プリン.png" alt="ファイター画像"></a>
+                    <a href="../dark_pit.html"><img src="../img/MU_fighter/ブラックピット.png" alt="ファイター画像"></a>
+                    <a href="../zelda.html"><img src="../img/MU_fighter/ゼルダ.png" alt="ファイター画像"></a>
+                    <a href="../pacman.html"><img src="../img/MU_fighter/パックマン.png" alt="ファイター画像"></a>
+                    <a href="../pokemon_trainer.html"><img src="../img/MU_fighter/ポケモントレーナー.png" alt="ファイター画像"></a>
+                    <a href="../donkey_kong.html"><img src="../img/MU_fighter/ドンキーコング.png" alt="ファイター画像"></a>
+                    <a href="../inkling.html"><img src="../img/MU_fighter/インクリング.png" alt="ファイター画像"></a>
+                    <a href="../wolf.html"><img src="../img/MU_fighter/ウルフ.png" alt="ファイター画像"></a>
+                    <a href="../wii_fit_trainer.html"><img src="../img/MU_fighter/Wii Fit トレーナー.png" alt="ファイター画像"></a>
+                    <a href="../kirby.html"><img src="../img/MU_fighter/カービィ.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_gobu">
+                    <p>五分<br>47.5~52.5%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="../ness.html"><img src="../img/MU_fighter/ネス.png" alt="ファイター画像"></a>
+                    <a href="../bowser.html"><img src="../img/MU_fighter/クッパ.png" alt="ファイター画像"></a>
+                    <a href="../sephiroth.html"><img src="../img/MU_fighter/セフィロス.png" alt="ファイター画像"></a>
+                    <a href="../falco.html"><img src="../img/MU_fighter/ファルコ.png" alt="ファイター画像"></a>
+                    <a href="../metaknight.html"><img src="../img/MU_fighter/メタナイト.png" alt="ファイター画像"></a>
+                    <a href="../minmin.html"><img src="../img/MU_fighter/ミェンミェン.png" alt="ファイター画像"></a>
+                    <a href="../dark_samus.html"><img src="../img/MU_fighter/ダークサムス.png" alt="ファイター画像"></a>
+                    <a href="../homura.html"><img src="../img/MU_fighter/ホムヒカ.png" alt="ファイター画像"></a>
+                    <a href="../mario.html"><img src="../img/MU_fighter/マリオ.png" alt="ファイター画像"></a>
+                    <a href="../snake.html"><img src="../img/MU_fighter/スネーク.png" alt="ファイター画像"></a>
+                    <a href="../cloud.html"><img src="../img/MU_fighter/クラウド.png" alt="ファイター画像"></a>
+                    <a href="../captain_falcon.html"><img src="../img/MU_fighter/キャプテン・ファルコン.png" alt="ファイター画像"></a>
+                    <a href="../chrom.html"><img src="../img/MU_fighter/クロム.png" alt="ファイター画像"></a>
+                    <a href="../roy.html"><img src="../img/MU_fighter/ロイ.png" alt="ファイター画像"></a>
+                    <a href="../lucario.html"><img src="../img/MU_fighter/ルカリオ.png" alt="ファイター画像"></a>
+                    <a href="../fox.html"><img src="../img/MU_fighter/フォックス.png" alt="ファイター画像"></a>
+                    <a href="../toon_link.html"><img src="../img/MU_fighter/トゥーンリンク.png" alt="ファイター画像"></a>
+                    <a href="../ken.html"><img src="../img/MU_fighter/ケン.png" alt="ファイター画像"></a>
+                    <a href="../pit.html"><img src="../img/MU_fighter/ピット.png" alt="ファイター画像"></a>
+                    <a href="../peach.html"><img src="../img/MU_fighter/ピーチ.png" alt="ファイター画像"></a>
+                    <a href="../byleth.html"><img src="../img/MU_fighter/ベレトス.png" alt="ファイター画像"></a>
+                    <a href="../link.html"><img src="../img/MU_fighter/リンク.png" alt="ファイター画像"></a>
+                    <a href="../young_link.html"><img src="../img/MU_fighter/こどもリンク.png" alt="ファイター画像"></a>
+                    <a href="../palutena.html"><img src="../img/MU_fighter/パルテナ.png" alt="ファイター画像"></a>
+                    <a href="../bayonetta.html"><img src="../img/MU_fighter/ベヨネッタ.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_bihuri">
+                    <p>微不利<br>40~47.5%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="../greninja.html"><img src="../img/MU_fighter/ゲッコウガ.png" alt="ファイター画像"></a>
+                    <a href="../pikachu.html"><img src="../img/MU_fighter/ピカチュウ.png" alt="ファイター画像"></a>
+                    <a href="../ridley.html"><img src="../img/MU_fighter/リドリー.png" alt="ファイター画像"></a>
+                    <a href="../sora.html"><img src="../img/MU_fighter/ソラ.png" alt="ファイター画像"></a>
+                    <a href="../banjo_and_kazooie.html"><img src="../img/MU_fighter/バンジョー＆カズーイ.png" alt="ファイター画像"></a>
+                    <a href="../steve.html"><img src="../img/MU_fighter/スティーブ.png" alt="ファイター画像"></a>
+                    <a href="../wario.html"><img src="../img/MU_fighter/ワリオ.png" alt="ファイター画像"></a>
+                    <a href="../hero.html"><img src="../img/MU_fighter/勇者.png" alt="ファイター画像"></a>
+                    <a href="../duck_hunt.html"><img src="../img/MU_fighter/ダックハント.png" alt="ファイター画像"></a>
+                    <a href="../mewtwo.html"><img src="../img/MU_fighter/ミュウツー.png" alt="ファイター画像"></a>
+                    <a href="../terry.html"><img src="../img/MU_fighter/テリー.png" alt="ファイター画像"></a>
+                    <a href="../isabelle.html"><img src="../img/MU_fighter/しずえ.png" alt="ファイター画像"></a>
+                    <a href="../zero_suit_samus.html"><img src="../img/MU_fighter/ゼロスーツサムス.png" alt="ファイター画像"></a>
+                    <a href="../mii_gunner.html"><img src="../img/MU_fighter/射撃Mii.png" alt="ファイター画像"></a>
+                    <a href="../bowser_jr.html"><img src="../img/MU_fighter/クッパJr..png" alt="ファイター画像"></a>
+                    <a href="../villager.html"><img src="../img/MU_fighter/むらびと.png" alt="ファイター画像"></a>
+                    <a href="../corrin.html"><img src="../img/MU_fighter/カムイ.png" alt="ファイター画像"></a>
+                    <a href="../ryu.html"><img src="../img/MU_fighter/リュウ.png" alt="ファイター画像"></a>
+                    <a href="../yoshi.html"><img src="../img/MU_fighter/ヨッシー.png" alt="ファイター画像"></a>
+                    <a href="../dr_mario.html"><img src="../img/MU_fighter/ドクターマリオ.png" alt="ファイター画像"></a>
+                    <a href="../sheik.html"><img src="../img/MU_fighter/シーク.png" alt="ファイター画像"></a>
+                    <a href="../ganondorf.html"><img src="../img/MU_fighter/ガノンドルフ.png" alt="ファイター画像"></a>
+                    <a href="../diddy_kong.html"><img src="../img/MU_fighter/ディディーコング.png" alt="ファイター画像"></a>
+                    <a href="../marth.html"><img src="../img/MU_fighter/マルス.png" alt="ファイター画像"></a>
+                    <a href="../lucina.html"><img src="../img/MU_fighter/ルキナ.png" alt="ファイター画像"></a>
+                    <a href="../mii_brawler.html"><img src="../img/MU_fighter/格闘Mii.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_huri">
+                    <p>不利<br>0~40%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="../lucas.html"><img src="../img/MU_fighter/リュカ.png" alt="ファイター画像"></a>
+                    <a href="../incineroar.html"><img src="../img/MU_fighter/ガオガエン.png" alt="ファイター画像"></a>
+                    <a href="../megaman.html"><img src="../img/MU_fighter/ロックマン.png" alt="ファイター画像"></a>
+                    <a href="../kazuya.html"><img src="../img/MU_fighter/カズヤ.png" alt="ファイター画像"></a>
+                    <a href="../rosalina_luma.html"><img src="../img/MU_fighter/ロゼッタ＆チコ.png" alt="ファイター画像"></a>
+                    <a href="../luigi.html"><img src="../img/MU_fighter/ルイージ.png" alt="ファイター画像"></a>
+                    <a href="../ice_climber.html"><img src="../img/MU_fighter/アイスクライマー.png" alt="ファイター画像"></a>
+                    <a href="../little_mac.html"><img src="../img/MU_fighter/リトルマック.png" alt="ファイター画像"></a>
+                    <a href="../mr_game_and_watch.html"><img src="../img/MU_fighter/Mr.ゲーム&ウォッチ.png" alt="ファイター画像"></a>
+                    <a href="../daisy.html"><img src="../img/MU_fighter/デイジー.png" alt="ファイター画像"></a>
+                    <a href="../olimar.html"><img src="../img/MU_fighter/ピクミン＆オリマー.png" alt="ファイター画像"></a>
+                    <a href="../shulk.html"><img src="../img/MU_fighter/シュルク.png" alt="ファイター画像"></a>
+
+                </li>
+            </ul>
+        </div>
+        <!--表はここから-->
+
+        <div class="section">相性補完</div>
+        <div class="explain1">
+            <p>　ファイターの勝率から使用キャラにおける相性補完度が高い順にリスト化しました。全試合を踏まえたデータですので参考にしてみたください。</p>
+        </div>
+        <div class="MU_table">
+            <ul class="MU_box">
+                <li class="MU_title MU_title_Fighter">
+                    <p>マリオ<br>相性補完表</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./mario.html"><img src="../img/MU_fighter/マリオ.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_yuuri">
+                    <p>おすすめ<br>90~100%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./steve.html"><img src="../img/MU_fighter/スティーブ.png" alt="ファイター画像"></a>
+                    <a href="./bowser_jr.html"><img src="../img/MU_fighter/クッパJr..png" alt="ファイター画像"></a>
+
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_biyuuri">
+                    <p>ややおすすめ<br>80~90%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./mii_swordfighter.html"><img src="../img/MU_fighter/剣術Mii.png" alt="ファイター画像"></a>
+                    <a href="./peach.html"><img src="../img/MU_fighter/ピーチ.png" alt="ファイター画像"></a>
+                    <a href="./chrom.html"><img src="../img/MU_fighter/クロム.png" alt="ファイター画像"></a>
+                    <a href="./mii_gunner.html"><img src="../img/MU_fighter/射撃Mii.png" alt="ファイター画像"></a>
+                    <a href="./diddy_kong.html"><img src="../img/MU_fighter/ディディーコング.png" alt="ファイター画像"></a>
+                    <a href="./kirby.html"><img src="../img/MU_fighter/カービィ.png" alt="ファイター画像"></a>
+                    <a href="./shulk.html"><img src="../img/MU_fighter/シュルク.png" alt="ファイター画像"></a>
+                    <a href="./luigi.html"><img src="../img/MU_fighter/ルイージ.png" alt="ファイター画像"></a>
+                    <a href="./lucario.html"><img src="../img/MU_fighter/ルカリオ.png" alt="ファイター画像"></a>
+                    <a href="./ice_climber.html"><img src="../img/MU_fighter/アイスクライマー.png" alt="ファイター画像"></a>
+                    <a href="./duck_hunt.html"><img src="../img/MU_fighter/ダックハント.png" alt="ファイター画像"></a>
+                    <a href="./pacman.html"><img src="../img/MU_fighter/パックマン.png" alt="ファイター画像"></a>
+                    <a href="./terry.html"><img src="../img/MU_fighter/テリー.png" alt="ファイター画像"></a>
+                    <a href="./kazuya.html"><img src="../img/MU_fighter/カズヤ.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_gobu">
+                    <p>普通<br>70~80%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./ryu.html"><img src="../img/MU_fighter/リュウ.png" alt="ファイター画像"></a>
+                    <a href="./mewtwo.html"><img src="../img/MU_fighter/ミュウツー.png" alt="ファイター画像"></a>
+                    <a href="./young_link.html"><img src="../img/MU_fighter/こどもリンク.png" alt="ファイター画像"></a>
+                    <a href="./minmin.html"><img src="../img/MU_fighter/ミェンミェン.png" alt="ファイター画像"></a>
+                    <a href="./mii_brawler.html"><img src="../img/MU_fighter/格闘Mii.png" alt="ファイター画像"></a>
+                    <a href="./incineroar.html"><img src="../img/MU_fighter/ガオガエン.png" alt="ファイター画像"></a>
+                    <a href="./pokemon_trainer.html"><img src="../img/MU_fighter/ポケモントレーナー.png" alt="ファイター画像"></a>
+                    <a href="./rosalina_luma.html"><img src="../img/MU_fighter/ロゼッタ＆チコ.png" alt="ファイター画像"></a>
+                    <a href="./cloud.html"><img src="../img/MU_fighter/クラウド.png" alt="ファイター画像"></a>
+                    <a href="./isabelle.html"><img src="../img/MU_fighter/しずえ.png" alt="ファイター画像"></a>
+                    <a href="./megaman.html"><img src="../img/MU_fighter/ロックマン.png" alt="ファイター画像"></a>
+                    <a href="./lucas.html"><img src="../img/MU_fighter/リュカ.png" alt="ファイター画像"></a>
+                    <a href="./bowser.html"><img src="../img/MU_fighter/クッパ.png" alt="ファイター画像"></a>
+                    <a href="./corrin.html"><img src="../img/MU_fighter/カムイ.png" alt="ファイター画像"></a>
+                    <a href="./homura.html"><img src="../img/MU_fighter/ホムヒカ.png" alt="ファイター画像"></a>
+                    <a href="./ike.html"><img src="../img/MU_fighter/アイク.png" alt="ファイター画像"></a>
+                    <a href="./ganondorf.html"><img src="../img/MU_fighter/ガノンドルフ.png" alt="ファイター画像"></a>
+                    <a href="./dark_samus.html"><img src="../img/MU_fighter/ダークサムス.png" alt="ファイター画像"></a>
+                    <a href="./banjo_and_kazooie.html"><img src="../img/MU_fighter/バンジョー＆カズーイ.png" alt="ファイター画像"></a>
+                    <a href="./dr_mario.html"><img src="../img/MU_fighter/ドクターマリオ.png" alt="ファイター画像"></a>
+                    <a href="./rob.html"><img src="../img/MU_fighter/ロボット.png" alt="ファイター画像"></a>
+                    <a href="./hero.html"><img src="../img/MU_fighter/勇者.png" alt="ファイター画像"></a>
+                    <a href="./donkey_kong.html"><img src="../img/MU_fighter/ドンキーコング.png" alt="ファイター画像"></a>
+                    <a href="./olimar.html"><img src="../img/MU_fighter/ピクミン＆オリマー.png" alt="ファイター画像"></a>
+                    <a href="./toon_link.html"><img src="../img/MU_fighter/トゥーンリンク.png" alt="ファイター画像"></a>
+                    <a href="./metaknight.html"><img src="../img/MU_fighter/メタナイト.png" alt="ファイター画像"></a>
+                    <a href="./little_mac.html"><img src="../img/MU_fighter/リトルマック.png" alt="ファイター画像"></a>
+                    <a href="./wolf.html"><img src="../img/MU_fighter/ウルフ.png" alt="ファイター画像"></a>
+                    <a href="./ken.html"><img src="../img/MU_fighter/ケン.png" alt="ファイター画像"></a>
+                    <a href="./ness.html"><img src="../img/MU_fighter/ネス.png" alt="ファイター画像"></a>
+                    <a href="./richter.html"><img src="../img/MU_fighter/リヒター.png" alt="ファイター画像"></a>
+                    <a href="./falco.html"><img src="../img/MU_fighter/ファルコ.png" alt="ファイター画像"></a>
+                    <a href="./wii_fit_trainer.html"><img src="../img/MU_fighter/Wii Fit トレーナー.png" alt="ファイター画像"></a>
+                    <a href="./samus.html"><img src="../img/MU_fighter/サムス.png" alt="ファイター画像"></a>
+                    <a href="./snake.html"><img src="../img/MU_fighter/スネーク.png" alt="ファイター画像"></a>
+                    <a href="./mr_game_and_watch.html"><img src="../img/MU_fighter/Mr.ゲーム&ウォッチ.png" alt="ファイター画像"></a>
+                    <a href="./link.html"><img src="../img/MU_fighter/リンク.png" alt="ファイター画像"></a>
+                    <a href="./king_k_rool.html"><img src="../img/MU_fighter/キングクルール.png" alt="ファイター画像"></a>
+                    <a href="./piranha_plant.html"><img src="../img/MU_fighter/パックンフラワー.png" alt="ファイター画像"></a>
+                    <a href="./zero_suit_samus.html"><img src="../img/MU_fighter/ゼロスーツサムス.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_bihuri">
+                    <p>おすすめしない<br>60~70%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./sora.html"><img src="../img/MU_fighter/ソラ.png" alt="ファイター画像"></a>
+                    <a href="./robin.html"><img src="../img/MU_fighter/ルフレ.png" alt="ファイター画像"></a>
+                    <a href="./yoshi.html"><img src="../img/MU_fighter/ヨッシー.png" alt="ファイター画像"></a>
+                    <a href="./captain_falcon.html"><img src="../img/MU_fighter/キャプテン・ファルコン.png" alt="ファイター画像"></a>
+                    <a href="./bayonetta.html"><img src="../img/MU_fighter/ベヨネッタ.png" alt="ファイター画像"></a>
+                    <a href="./greninja.html"><img src="../img/MU_fighter/ゲッコウガ.png" alt="ファイター画像"></a>
+                    <a href="./king_dedede.html"><img src="../img/MU_fighter/デデデ.png" alt="ファイター画像"></a>
+                    <a href="./inkling.html"><img src="../img/MU_fighter/インクリング.png" alt="ファイター画像"></a>
+                    <a href="./villager.html"><img src="../img/MU_fighter/むらびと.png" alt="ファイター画像"></a>
+                    <a href="./sephiroth.html"><img src="../img/MU_fighter/セフィロス.png" alt="ファイター画像"></a>
+                    <a href="./ridley.html"><img src="../img/MU_fighter/リドリー.png" alt="ファイター画像"></a>
+                    <a href="./lucina.html"><img src="../img/MU_fighter/ルキナ.png" alt="ファイター画像"></a>
+                    <a href="./sonic.html"><img src="../img/MU_fighter/ソニック.png" alt="ファイター画像"></a>
+                    <a href="./byleth.html"><img src="../img/MU_fighter/ベレトス.png" alt="ファイター画像"></a>
+                    <a href="./pichu.html"><img src="../img/MU_fighter/ピチュー.png" alt="ファイター画像"></a>
+                    <a href="./pit.html"><img src="../img/MU_fighter/ピット.png" alt="ファイター画像"></a>
+                    <a href="./palutena.html"><img src="../img/MU_fighter/パルテナ.png" alt="ファイター画像"></a>
+                    <a href="./pikachu.html"><img src="../img/MU_fighter/ピカチュウ.png" alt="ファイター画像"></a>
+                    <a href="./joker.html"><img src="../img/MU_fighter/ジョーカー.png" alt="ファイター画像"></a>
+                    <a href="./wario.html"><img src="../img/MU_fighter/ワリオ.png" alt="ファイター画像"></a>
+                    <a href="./sheik.html"><img src="../img/MU_fighter/シーク.png" alt="ファイター画像"></a>
+                </li>
+            </ul>
+            <ul class="MU_box">
+                <li class="MU_title MU_title_huri">
+                    <p>絶対やめた方がいい<br>0~60%</p>
+                </li>
+                <li class="MU_result">
+                    <a href="./marth.html"><img src="../img/MU_fighter/マルス.png" alt="ファイター画像"></a>
+                    <a href="./jigglypuff.html"><img src="../img/MU_fighter/プリン.png" alt="ファイター画像"></a>
+                    <a href="./zelda.html"><img src="../img/MU_fighter/ゼルダ.png" alt="ファイター画像"></a>
+                    <a href="./roy.html"><img src="../img/MU_fighter/ロイ.png" alt="ファイター画像"></a>
+                    <a href="./fox.html"><img src="../img/MU_fighter/フォックス.png" alt="ファイター画像"></a>
+                    <a href="./mario.html"><img src="../img/MU_fighter/マリオ.png" alt="ファイター画像"></a>
+
+                </li>
+            </ul>
+        </div>
+        <!--表はここから-->
+        <div class="section">
+            戦績詳細
+        </div>
+        <div class="explain2">
+            <p>
+                　さらに各ファイター毎の対戦数、勝敗、勝率を見たい方は以下のテーブルを参照ください。
+                各カラムの▲/▼ボタンを押すことで、昇順・降順に並べ替えることが可能です。
+            </p>
+        </div>
+        <!--
+        <table class="sorttbl" id="myTable">
+            <tr>
+                <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(1)')">ファイター<i class="fa fa-sort"></i></th>
+                <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(2)')">対戦数<i class="fa fa-sort"></i></th>
+                <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(3)')">勝利数<i class="fa fa-sort"></i></th>
+                <th onclick="w3.sortHTML('#myTable','.item', 'td:nth-child(4)')">勝率<i class="fa fa-sort"></i></th>
+            </tr>
+-->
+        <table class="sorttbl" id="sampleTable">
+            <tr>
+                <th cmanSortBtn>ファイター</th>
+                <th cmanSortBtn>対戦数</th>
+                <th cmanSortBtn>勝利数</th>
+                <th cmanSortBtn>勝率</th>
+            </tr>
+            <tr class="item">
+                <td><a href="./mario.html">
+                        <p>01</p><img src="../img/MU_fighter/マリオ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./mario.html">102</a></td>
+                <td><a href="./mario.html">51</a></td>
+                <td><a href="./mario.html">50%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./donkey_kong.html">
+                        <p>02</p><img src="../img/MU_fighter/ドンキーコング.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./donkey_kong.html">308</a></td>
+                <td><a href="./donkey_kong.html">166</a></td>
+                <td><a href="./donkey_kong.html">53.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./link.html">
+                        <p>03</p><img src="../img/MU_fighter/リンク.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./link.html">148</a></td>
+                <td><a href="./link.html">72</a></td>
+                <td><a href="./link.html">48.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./samus.html">
+                        <p>04</p><img src="../img/MU_fighter/サムス.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./samus.html">144</a></td>
+                <td><a href="./samus.html">81</a></td>
+                <td><a href="./samus.html">56.2%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./dark_samus.html">
+                        <p>05</p><img src="../img/MU_fighter/ダークサムス.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./dark_samus.html">92</a></td>
+                <td><a href="./dark_samus.html">47</a></td>
+                <td><a href="./dark_samus.html">51.1%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./yoshi.html">
+                        <p>06</p><img src="../img/MU_fighter/ヨッシー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./yoshi.html">274</a></td>
+                <td><a href="./yoshi.html">114</a></td>
+                <td><a href="./yoshi.html">41.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./kirby.html">
+                        <p>07</p><img src="../img/MU_fighter/カービィ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./kirby.html">55</a></td>
+                <td><a href="./kirby.html">29</a></td>
+                <td><a href="./kirby.html">52.7%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./fox.html">
+                        <p>08</p><img src="../img/MU_fighter/フォックス.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./fox.html">110</a></td>
+                <td><a href="./fox.html">54</a></td>
+                <td><a href="./fox.html">49.1%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./pikachu.html">
+                        <p>09</p><img src="../img/MU_fighter/ピカチュウ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./pikachu.html">49</a></td>
+                <td><a href="./pikachu.html">23</a></td>
+                <td><a href="./pikachu.html">46.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./luigi.html">
+                        <p>10</p><img src="../img/MU_fighter/ルイージ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./luigi.html">126</a></td>
+                <td><a href="./luigi.html">44</a></td>
+                <td><a href="./luigi.html">34.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./ness.html">
+                        <p>11</p><img src="../img/MU_fighter/ネス.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./ness.html">180</a></td>
+                <td><a href="./ness.html">94</a></td>
+                <td><a href="./ness.html">52.2%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./captain_falcon.html">
+                        <p>12</p><img src="../img/MU_fighter/キャプテン・ファルコン.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./captain_falcon.html">223</a></td>
+                <td><a href="./captain_falcon.html">110</a></td>
+                <td><a href="./captain_falcon.html">49.3%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./jigglypuff.html">
+                        <p>13</p><img src="../img/MU_fighter/プリン.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./jigglypuff.html">43</a></td>
+                <td><a href="./jigglypuff.html">24</a></td>
+                <td><a href="./jigglypuff.html">55.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./peach.html">
+                        <p>14</p><img src="../img/MU_fighter/ピーチ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./peach.html">43</a></td>
+                <td><a href="./peach.html">21</a></td>
+                <td><a href="./peach.html">48.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./daisy.html">
+                        <p>15</p><img src="../img/MU_fighter/デイジー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./daisy.html">18</a></td>
+                <td><a href="./daisy.html">5</a></td>
+                <td><a href="./daisy.html">27.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./bowser.html">
+                        <p>16</p><img src="../img/MU_fighter/クッパ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./bowser.html">174</a></td>
+                <td><a href="./bowser.html">90</a></td>
+                <td><a href="./bowser.html">51.7%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./ice_climber.html">
+                        <p>17</p><img src="../img/MU_fighter/アイスクライマー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./ice_climber.html">141</a></td>
+                <td><a href="./ice_climber.html">48</a></td>
+                <td><a href="./ice_climber.html">34%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./sheik.html">
+                        <p>18</p><img src="../img/MU_fighter/シーク.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./sheik.html">51</a></td>
+                <td><a href="./sheik.html">21</a></td>
+                <td><a href="./sheik.html">41.2%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./zelda.html">
+                        <p>19</p><img src="../img/MU_fighter/ゼルダ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./zelda.html">120</a></td>
+                <td><a href="./zelda.html">66</a></td>
+                <td><a href="./zelda.html">55%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./dr_mario.html">
+                        <p>20</p><img src="../img/MU_fighter/ドクターマリオ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./dr_mario.html">53</a></td>
+                <td><a href="./dr_mario.html">22</a></td>
+                <td><a href="./dr_mario.html">41.5%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./pichu.html">
+                        <p>21</p><img src="../img/MU_fighter/ピチュー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./pichu.html">34</a></td>
+                <td><a href="./pichu.html">19</a></td>
+                <td><a href="./pichu.html">55.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./falco.html">
+                        <p>22</p><img src="../img/MU_fighter/ファルコ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./falco.html">173</a></td>
+                <td><a href="./falco.html">89</a></td>
+                <td><a href="./falco.html">51.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./marth.html">
+                        <p>23</p><img src="../img/MU_fighter/マルス.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./marth.html">27</a></td>
+                <td><a href="./marth.html">11</a></td>
+                <td><a href="./marth.html">40.7%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./lucina.html">
+                        <p>24</p><img src="../img/MU_fighter/ルキナ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./lucina.html">86</a></td>
+                <td><a href="./lucina.html">35</a></td>
+                <td><a href="./lucina.html">40.7%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./young_link.html">
+                        <p>25</p><img src="../img/MU_fighter/こどもリンク.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./young_link.html">79</a></td>
+                <td><a href="./young_link.html">38</a></td>
+                <td><a href="./young_link.html">48.1%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./ganondorf.html">
+                        <p>26</p><img src="../img/MU_fighter/ガノンドルフ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./ganondorf.html">241</a></td>
+                <td><a href="./ganondorf.html">99</a></td>
+                <td><a href="./ganondorf.html">41.1%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./mewtwo.html">
+                        <p>27</p><img src="../img/MU_fighter/ミュウツー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./mewtwo.html">90</a></td>
+                <td><a href="./mewtwo.html">41</a></td>
+                <td><a href="./mewtwo.html">45.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./roy.html">
+                        <p>28</p><img src="../img/MU_fighter/ロイ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./roy.html">118</a></td>
+                <td><a href="./roy.html">58</a></td>
+                <td><a href="./roy.html">49.2%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./chrom.html">
+                        <p>29</p><img src="../img/MU_fighter/クロム.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./chrom.html">67</a></td>
+                <td><a href="./chrom.html">33</a></td>
+                <td><a href="./chrom.html">49.3%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./mr_game_and_watch.html">
+                        <p>30</p><img src="../img/MU_fighter/Mr.ゲーム&ウォッチ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./mr_game_and_watch.html">143</a></td>
+                <td><a href="./mr_game_and_watch.html">41</a></td>
+                <td><a href="./mr_game_and_watch.html">28.7%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./metaknight.html">
+                        <p>31</p><img src="../img/MU_fighter/メタナイト.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./metaknight.html">158</a></td>
+                <td><a href="./metaknight.html">81</a></td>
+                <td><a href="./metaknight.html">51.3%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./pit.html">
+                        <p>32</p><img src="../img/MU_fighter/ピット.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./pit.html">51</a></td>
+                <td><a href="./pit.html">25</a></td>
+                <td><a href="./pit.html">49%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./dark_pit.html">
+                        <p>33</p><img src="../img/MU_fighter/ブラックピット.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./dark_pit.html">45</a></td>
+                <td><a href="./dark_pit.html">25</a></td>
+                <td><a href="./dark_pit.html">55.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./zero_suit_samus.html">
+                        <p>34</p><img src="../img/MU_fighter/ゼロスーツサムス.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./zero_suit_samus.html">79</a></td>
+                <td><a href="./zero_suit_samus.html">35</a></td>
+                <td><a href="./zero_suit_samus.html">44.3%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./wario.html">
+                        <p>35</p><img src="../img/MU_fighter/ワリオ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./wario.html">61</a></td>
+                <td><a href="./wario.html">28</a></td>
+                <td><a href="./wario.html">45.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./snake.html">
+                        <p>36</p><img src="../img/MU_fighter/スネーク.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./snake.html">361</a></td>
+                <td><a href="./snake.html">180</a></td>
+                <td><a href="./snake.html">49.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./ike.html">
+                        <p>37</p><img src="../img/MU_fighter/アイク.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./ike.html">154</a></td>
+                <td><a href="./ike.html">86</a></td>
+                <td><a href="./ike.html">55.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./pokemon_trainer.html">
+                        <p>38</p><img src="../img/MU_fighter/ポケモントレーナー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./pokemon_trainer.html">139</a></td>
+                <td><a href="./pokemon_trainer.html">75</a></td>
+                <td><a href="./pokemon_trainer.html">54%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./diddy_kong.html">
+                        <p>39</p><img src="../img/MU_fighter/ディディーコング.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./diddy_kong.html">120</a></td>
+                <td><a href="./diddy_kong.html">49</a></td>
+                <td><a href="./diddy_kong.html">40.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./lucas.html">
+                        <p>40</p><img src="../img/MU_fighter/リュカ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./lucas.html">89</a></td>
+                <td><a href="./lucas.html">35</a></td>
+                <td><a href="./lucas.html">39.3%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./sonic.html">
+                        <p>41</p><img src="../img/MU_fighter/ソニック.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./sonic.html">206</a></td>
+                <td><a href="./sonic.html">117</a></td>
+                <td><a href="./sonic.html">56.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./king_dedede.html">
+                        <p>42</p><img src="../img/MU_fighter/デデデ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./king_dedede.html">189</a></td>
+                <td><a href="./king_dedede.html">117</a></td>
+                <td><a href="./king_dedede.html">61.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./olimar.html">
+                        <p>43</p><img src="../img/MU_fighter/ピクミン＆オリマー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./olimar.html">50</a></td>
+                <td><a href="./olimar.html">13</a></td>
+                <td><a href="./olimar.html">26%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./lucario.html">
+                        <p>44</p><img src="../img/MU_fighter/ルカリオ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./lucario.html">59</a></td>
+                <td><a href="./lucario.html">29</a></td>
+                <td><a href="./lucario.html">49.2%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./rob.html">
+                        <p>45</p><img src="../img/MU_fighter/ロボット.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./rob.html">246</a></td>
+                <td><a href="./rob.html">138</a></td>
+                <td><a href="./rob.html">56.1%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./toon_link.html">
+                        <p>46</p><img src="../img/MU_fighter/トゥーンリンク.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./toon_link.html">106</a></td>
+                <td><a href="./toon_link.html">52</a></td>
+                <td><a href="./toon_link.html">49.1%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./wolf.html">
+                        <p>47</p><img src="../img/MU_fighter/ウルフ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./wolf.html">116</a></td>
+                <td><a href="./wolf.html">62</a></td>
+                <td><a href="./wolf.html">53.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./villager.html">
+                        <p>48</p><img src="../img/MU_fighter/むらびと.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./villager.html">104</a></td>
+                <td><a href="./villager.html">45</a></td>
+                <td><a href="./villager.html">43.3%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./megaman.html">
+                        <p>49</p><img src="../img/MU_fighter/ロックマン.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./megaman.html">85</a></td>
+                <td><a href="./megaman.html">31</a></td>
+                <td><a href="./megaman.html">36.5%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./wii_fit_trainer.html">
+                        <p>50</p><img src="../img/MU_fighter/Wii Fit トレーナー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./wii_fit_trainer.html">164</a></td>
+                <td><a href="./wii_fit_trainer.html">87</a></td>
+                <td><a href="./wii_fit_trainer.html">53%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./rosalina_luma.html">
+                        <p>51</p><img src="../img/MU_fighter/ロゼッタ＆チコ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./rosalina_luma.html">48</a></td>
+                <td><a href="./rosalina_luma.html">17</a></td>
+                <td><a href="./rosalina_luma.html">35.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./little_mac.html">
+                        <p>52</p><img src="../img/MU_fighter/リトルマック.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./little_mac.html">98</a></td>
+                <td><a href="./little_mac.html">30</a></td>
+                <td><a href="./little_mac.html">30.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./greninja.html">
+                        <p>53</p><img src="../img/MU_fighter/ゲッコウガ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./greninja.html">274</a></td>
+                <td><a href="./greninja.html">130</a></td>
+                <td><a href="./greninja.html">47.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./mii_brawler.html">
+                        <p>54</p><img src="../img/MU_fighter/格闘Mii.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./mii_brawler.html">30</a></td>
+                <td><a href="./mii_brawler.html">12</a></td>
+                <td><a href="./mii_brawler.html">40%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./mii_swordfighter.html">
+                        <p>55</p><img src="../img/MU_fighter/剣術Mii.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./mii_swordfighter.html">49</a></td>
+                <td><a href="./mii_swordfighter.html">32</a></td>
+                <td><a href="./mii_swordfighter.html">65.3%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./mii_gunner.html">
+                        <p>56</p><img src="../img/MU_fighter/射撃Mii.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./mii_gunner.html">64</a></td>
+                <td><a href="./mii_gunner.html">28</a></td>
+                <td><a href="./mii_gunner.html">43.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./palutena.html">
+                        <p>57</p><img src="../img/MU_fighter/パルテナ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./palutena.html">175</a></td>
+                <td><a href="./palutena.html">84</a></td>
+                <td><a href="./palutena.html">48%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./pacman.html">
+                        <p>58</p><img src="../img/MU_fighter/パックマン.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./pacman.html">165</a></td>
+                <td><a href="./pacman.html">90</a></td>
+                <td><a href="./pacman.html">54.5%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./robin.html">
+                        <p>59</p><img src="../img/MU_fighter/ルフレ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./robin.html">223</a></td>
+                <td><a href="./robin.html">125</a></td>
+                <td><a href="./robin.html">56.1%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./shulk.html">
+                        <p>60</p><img src="../img/MU_fighter/シュルク.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./shulk.html">86</a></td>
+                <td><a href="./shulk.html">22</a></td>
+                <td><a href="./shulk.html">25.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./bowser_jr.html">
+                        <p>61</p><img src="../img/MU_fighter/クッパJr..png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./bowser_jr.html">112</a></td>
+                <td><a href="./bowser_jr.html">49</a></td>
+                <td><a href="./bowser_jr.html">43.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./duck_hunt.html">
+                        <p>62</p><img src="../img/MU_fighter/ダックハント.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./duck_hunt.html">107</a></td>
+                <td><a href="./duck_hunt.html">49</a></td>
+                <td><a href="./duck_hunt.html">45.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./ryu.html">
+                        <p>63</p><img src="../img/MU_fighter/リュウ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./ryu.html">54</a></td>
+                <td><a href="./ryu.html">23</a></td>
+                <td><a href="./ryu.html">42.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./ken.html">
+                        <p>64</p><img src="../img/MU_fighter/ケン.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./ken.html">157</a></td>
+                <td><a href="./ken.html">77</a></td>
+                <td><a href="./ken.html">49%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./cloud.html">
+                        <p>65</p><img src="../img/MU_fighter/クラウド.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./cloud.html">156</a></td>
+                <td><a href="./cloud.html">77</a></td>
+                <td><a href="./cloud.html">49.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./corrin.html">
+                        <p>66</p><img src="../img/MU_fighter/カムイ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./corrin.html">102</a></td>
+                <td><a href="./corrin.html">44</a></td>
+                <td><a href="./corrin.html">43.1%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./bayonetta.html">
+                        <p>67</p><img src="../img/MU_fighter/ベヨネッタ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./bayonetta.html">119</a></td>
+                <td><a href="./bayonetta.html">57</a></td>
+                <td><a href="./bayonetta.html">47.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./inkling.html">
+                        <p>68</p><img src="../img/MU_fighter/インクリング.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./inkling.html">97</a></td>
+                <td><a href="./inkling.html">52</a></td>
+                <td><a href="./inkling.html">53.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./ridley.html">
+                        <p>69</p><img src="../img/MU_fighter/リドリー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./ridley.html">150</a></td>
+                <td><a href="./ridley.html">70</a></td>
+                <td><a href="./ridley.html">46.7%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./simon.html">
+                        <p>70</p><img src="../img/MU_fighter/シモン.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./simon.html">24</a></td>
+                <td><a href="./simon.html">15</a></td>
+                <td><a href="./simon.html">62.5%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./richter.html">
+                        <p>71</p><img src="../img/MU_fighter/リヒター.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./richter.html">81</a></td>
+                <td><a href="./richter.html">49</a></td>
+                <td><a href="./richter.html">60.5%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./king_k_rool.html">
+                        <p>72</p><img src="../img/MU_fighter/キングクルール.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./king_k_rool.html">111</a></td>
+                <td><a href="./king_k_rool.html">67</a></td>
+                <td><a href="./king_k_rool.html">60.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./isabelle.html">
+                        <p>73</p><img src="../img/MU_fighter/しずえ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./isabelle.html">36</a></td>
+                <td><a href="./isabelle.html">16</a></td>
+                <td><a href="./isabelle.html">44.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./incineroar.html">
+                        <p>74</p><img src="../img/MU_fighter/ガオガエン.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./incineroar.html">47</a></td>
+                <td><a href="./incineroar.html">18</a></td>
+                <td><a href="./incineroar.html">38.3%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./piranha_plant.html">
+                        <p>75</p><img src="../img/MU_fighter/パックンフラワー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./piranha_plant.html">76</a></td>
+                <td><a href="./piranha_plant.html">44</a></td>
+                <td><a href="./piranha_plant.html">57.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./joker.html">
+                        <p>76</p><img src="../img/MU_fighter/ジョーカー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./joker.html">160</a></td>
+                <td><a href="./joker.html">92</a></td>
+                <td><a href="./joker.html">57.5%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./hero.html">
+                        <p>77</p><img src="../img/MU_fighter/勇者.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./hero.html">231</a></td>
+                <td><a href="./hero.html">106</a></td>
+                <td><a href="./hero.html">45.9%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./banjo_and_kazooie.html">
+                        <p>78</p><img src="../img/MU_fighter/バンジョー＆カズーイ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./banjo_and_kazooie.html">131</a></td>
+                <td><a href="./banjo_and_kazooie.html">61</a></td>
+                <td><a href="./banjo_and_kazooie.html">46.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./terry.html">
+                        <p>79</p><img src="../img/MU_fighter/テリー.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./terry.html">123</a></td>
+                <td><a href="./terry.html">55</a></td>
+                <td><a href="./terry.html">44.7%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./byleth.html">
+                        <p>80</p><img src="../img/MU_fighter/ベレトス.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./byleth.html">168</a></td>
+                <td><a href="./byleth.html">82</a></td>
+                <td><a href="./byleth.html">48.8%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./minmin.html">
+                        <p>81</p><img src="../img/MU_fighter/ミェンミェン.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./minmin.html">340</a></td>
+                <td><a href="./minmin.html">174</a></td>
+                <td><a href="./minmin.html">51.2%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./steve.html">
+                        <p>82</p><img src="../img/MU_fighter/スティーブ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./steve.html">194</a></td>
+                <td><a href="./steve.html">90</a></td>
+                <td><a href="./steve.html">46.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./sephiroth.html">
+                        <p>83</p><img src="../img/MU_fighter/セフィロス.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./sephiroth.html">174</a></td>
+                <td><a href="./sephiroth.html">90</a></td>
+                <td><a href="./sephiroth.html">51.7%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./homura.html">
+                        <p>84</p><img src="../img/MU_fighter/ホムヒカ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./homura.html">241</a></td>
+                <td><a href="./homura.html">122</a></td>
+                <td><a href="./homura.html">50.6%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./kazuya.html">
+                        <p>85</p><img src="../img/MU_fighter/カズヤ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./kazuya.html">209</a></td>
+                <td><a href="./kazuya.html">76</a></td>
+                <td><a href="./kazuya.html">36.4%</a></td>
+            </tr>
+            <tr class="item">
+                <td><a href="./sora.html">
+                        <p>86</p><img src="../img/MU_fighter/ソラ.png" alt="ファイター画像">
+                    </a></td>
+                <td><a href="./sora.html">120</a></td>
+                <td><a href="./sora.html">56</a></td>
+                <td><a href="./sora.html">46.7%</a></td>
+            </tr>
+        </table>
+    </main>
+    <!--mainはここまで-->
+
+    <!--footerはここから-->
+    <footer class="footer">
+        <nav class="site-menu">
+            <ul>
+                <li><a href="../fighter.html">ファイター一覧</a></li>
+                <li><a href="../ranking.html">キャラランク</a></li>
+                <li><a href="../complemantaly.html">サブ補完適正</a></li>
+            </ul>
+        </nav>
+        <a class="footer-logo" href="../index.html">
+            <img src="../img/common/footer-logo.png" alt="SSBU">
+        </a>
+        <p class="footer-tel">「スマブラは人類史上最高のゲームである」</p>
+        <p class="footer-time"><small>大乱闘スマッシュブラザーズは、任天堂株式会社様の登録商標です。
+                当サイトは個人のスマブラファンが運営する非公式のWebサービスです。<br>
+                任天堂株式会社様、他関連企業様とは一切関係ありません。
+                下記はサイト独自の内容に関する著作権を示すものです。</small></p>
+        <p class="copyright"><small>&copy;SMASHMATE-ANALYSYS All rights reserved.</small></p>
+    </footer>
+    <!--footerはここまで-->
+</body>
+
+</html>
