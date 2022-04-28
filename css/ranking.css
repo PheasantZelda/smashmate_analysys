@@ -3,7 +3,6 @@
 
 .tierlist {
   width: 1050px;
-  max-width: 99%;
   background-color: #2c2a2a;
   padding: 20px 0px;
   margin-top: 25px;
@@ -13,7 +12,7 @@
 }
 
 .tierlist h2 {
-  font-size: 22px;
+  font-size: 25px;
   font-weight: bold;
   text-align: center;
 }
@@ -24,33 +23,27 @@
   width: 200px;
   height: 3px;
   background-color: rgb(255, 255, 255);
-  margin-top: 10px;
+  margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
 }
 
 .MUTITLE {
   display: flex;
-  max-width: 90%;
-  flex-direction: row;
+  justify-content:center;
+  position: relative;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-}
-
-.MUTITLE li {
-  margin-left: 200px;
+  padding: 20px 0;
 }
 
 .MUTITLE img {
   width: 180px;
+  position: absolute;
+  right: 5%;
 }
-
 
 .MU_table {
   width: 1000px;
-  max-width: 90%;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
@@ -66,12 +59,13 @@
 .MU_title {
   padding: 10px;
   width: 300px;
-  max-width: 27%;
   text-align: center;
   margin-right: 5px;
   display: table;
   font-weight: bold;
-  border: solid 1px #eee;
+  border: solid 1px #837f7f;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
 }
 
 .MU_table p {
@@ -80,58 +74,39 @@
   vertical-align: middle;
 }
 
-.MU_title_Fighter {
-  background-color:#333536;
-  border: 2px solid #837f7f;
-  color: white;
-  border-radius: 5px;
-}
-
 .MU_title_yuuri {
   background: linear-gradient(90deg, #ff3331, #ff7e21);
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
 }
 
 .MU_title_biyuuri {
   background: linear-gradient(90deg, #ffa300, #ede404);
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
 }
 
 .MU_title_gobu {
   background: linear-gradient(270deg, #c4e126, #39f68f);
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
 }
 
 .MU_title_bihuri {
   background: linear-gradient(270deg,  #1cddeb, #3782f6);
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
 }
 
 .MU_title_huri {
   background: linear-gradient(90deg, #4d3eff, #8833ff);
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
 }
 
 .MU_result {
   width: 693px;
-  max-width: 62.4%;
   background-color: #333536;
   border: 1px solid #333536;
   margin: 0;
   padding: 0;
-  border: solid 1px #eee;
+  border: solid 1px #837f7f;
 }
 
 .MU_result img {
   margin-top: 0.5px;
   padding-top: 2px;
   width: 63px;
-  max-width: 5.67%;
   margin-left: 1px;
   margin-bottom: 0px;
 }
@@ -166,13 +141,13 @@
 
 table {
   width: 600px;
+  max-width: 90%;
   height: auto;
   margin-top: 20px;
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
   text-align: center; /* 全テキストを中央寄せ */
-
 }
 
 th, td {
@@ -207,102 +182,75 @@ td img {
 @media (max-width: 800px) {
 
   .tierlist {
-    width: 1050px;
-    background-color: #2c2a2a;
-    padding: 20px 0px;
+    max-width: 98%;
+    padding: 10px 0px;
     margin-top: 25px;
-    margin-left: auto;
-    margin-right: auto;
     margin-bottom: 25px;
   }
   
   .tierlist h2 {
-    font-size: 22px;
-    font-weight: bold;
-    text-align: center;
+    font-size: 12px;
   }
   
   .tierlist h2::after {
-    content: '';
-    display: block;
-    width: 200px;
-    height: 3px;
-    background-color: rgb(255, 255, 255);
+    max-width: 40%;
+    height: 2px;
     margin-top: 10px;
-    margin-left: auto;
-    margin-right: auto;
   }
-  
+    
   .MUTITLE {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-  }
-  
-  .MUTITLE li {
-    margin-left: calc(8vh);
+    padding: 1% 0;
   }
   
   .MUTITLE img {
-    width: 180px;
+    width: 20%;
+    position: absolute;
+    right: 5%;
   }
   
   .MU_table {
-    width: 1000px;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-    align-items: center;
+    max-width: 95%;
+    margin-top: 10px;
   }
   
-  
+  .MU_box {
+    display: flex;
+    margin-top: 2px;
+    flex: 1 1 auto;
+  }
+
   .MU_title {
-    padding: 10px;
-    width: 300px;
+    padding: 0px;
+    padding-top: 2px;
     text-align: center;
-    margin-right: 5px;
-    display: table;
-    font-weight: bold;
-    border: solid 1px #eee;
+    margin-right: 2px;
+    border: solid 0.5px #eee;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
   }
   
   .MU_table p {
-    font-size: 5px;
-    line-height: 1.5;
+    font-size: 6px;
+    line-height: 1;
     display: table-cell;
     vertical-align: middle;
   }
   
-  .MU_title_Fighter {
-    background-color:#333536;
-    border: 2px solid #837f7f;
-    color: white;
-    border-radius: 5px;
-  }
-
-
   .MU_result {
     width: 693px;
-    background-color: #333536;
-    border: 1px solid #333536;
     margin: 0;
     padding: 0;
-    border: solid 1px #eee;
+    padding-top: 2px;
+    
   }
   
   .MU_result img {
-    margin-top: 0.5px;
-    padding-top: 2px;
+    padding-top: 1px;
     width: 63px;
-    margin-left: 1px;
+    max-width: 7.5%;
+    margin-left: 0.4%;
     margin-bottom: 0px;
   }
-
-
-
 
     /* === ソートボタン ============================== */
   .tsImg{
@@ -330,4 +278,17 @@ td img {
   .sorttbl p {
     font-size: 0%;
   }
+
+  th {
+    font-size: 12px;
+    line-height: 1.5;
+  }
+  
+  td {
+    font-size: 10px;
+  }
+  td img {
+    width: 30px;
+  }
+
 }
