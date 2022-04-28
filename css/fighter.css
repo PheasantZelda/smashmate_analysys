@@ -7,16 +7,21 @@
   margin-left: auto;
   margin-right: auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit,110px);
+  grid-template-columns: repeat(auto-fit,125px);
   column-gap: 15px;
-  row-gap: 40px;
+  row-gap: 30px;
   justify-content: center;
 }
 
+.fighter_list img {
+  width: auto;
+  border-radius: 10px;
+}
+
 .fighter_list dl {
-  width: 110px;
+  width: 125px;
   position:absolute;
-  top:-12px;
+  top:-15px;
 }
 
 .fighter_list dt {
@@ -55,7 +60,7 @@
   .fighter_list dl {
     width: 55px;
     position:absolute;
-    top:-12px;
+    top:-15px;
   }
 
     .fighter_list dt {
